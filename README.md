@@ -1,6 +1,9 @@
 # Wapp
 A small Wappalyzer tool for recon
 
+## Preview
+<img src="https://github.com/madisec/Wapp/blob/main/Preview.png">
+
 ## Install
 ```bash
 git clone https://github.com/madisec/Wapp.git
