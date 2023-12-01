@@ -26,19 +26,3 @@ func main() {
 
 	// Output: map[Acquia Cloud Platform:{} Amazon EC2:{} Apache:{} Cloudflare:{} Drupal:{} PHP:{} Percona:{} React:{} Varnish:{}]
 }
-
-// package main
-
-// import (
-// 	"fmt"
-
-// 	"github.com/common-nighthawk/go-figure"
-// 	wappalyzer "github.com/projectdiscovery/wappalyzergo"
-// )
-
-// func main() {
-// 	my_figlet := figure.NewFigure("MadiSec", "", true)
-// 	fmt.Println(my_figlet)
-// 	person := map[string]string{"Name": "mehdi", "fullname": "Mehdi Kamari"}
-// 	fmt.Println(person["Name"])
-// }
