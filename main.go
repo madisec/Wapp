@@ -1,11 +1,11 @@
 package main
 
 import (
+	"flag"
 	"fmt"
 	"io/ioutil"
 	"log"
 	"net/http"
-	"os"
 
 	"github.com/common-nighthawk/go-figure"
 	wappalyzer "github.com/projectdiscovery/wappalyzergo"
@@ -13,8 +13,11 @@ import (
 
 func main() {
 	figure.NewFigure("Wappalizer tool", "rectangles", true).Print()
-	fmt.Println(" 			Wappalizer tool - Powered by MadiSec\n")
-	resp, err := http.DefaultClient.Get(os.Args[1])
+	fmt.Println(" 			Wappalizer tool - Powered by MadiSec")
+	fmt.Println("")
+	url_flag := flag.String("u", "", "Get url for run tool")
+	flag.Parse()
+	resp, err := http.DefaultClient.Get(*url_flag)
 	if err != nil {
 		log.Fatal(err)
 	}
